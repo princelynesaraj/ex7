@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script&gt;
+<script>
+$(document).ready(function(){
+  $(".d").keyup(function(){
+    $(function(){
+        var form = $("form");
+        
+        form.on("submit", function(e){
+            e.preventDefault();
+            var resultDiv = $(".result .title");
+            
+            function calcBMI(){
+                var weight = $("#weight").val();
+            var height = $("#height").val();
+                var bmi = weight / (height * height);
+                return bmi.toFixed(2);
+                
+            }
+            
+</script>
+</head>
+<body>
+<h1 style="text-align:center ;">body Mass Index</h1>
+ WEIGHT: <input type="text" id='p' class='d'>
+ HEIGHT: <input type="text" id='r' class='d'>
+ 
+
+<button id='btn'>Final Amount</button>
+<br>
+<div class='box'></div>
+</body>
+</html>
